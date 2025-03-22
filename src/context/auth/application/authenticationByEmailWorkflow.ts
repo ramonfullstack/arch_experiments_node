@@ -2,7 +2,7 @@ import { findUsersByEmail } from '../repository/mongoose/findUsersByEmail.js';
 
 import { authenticationByEmailUseCase, UserLoginSuccessEvent } from './use-case/authentication-by-email.js';
 
-import type { Ok, Err } from 'src/chassys-api/Result.js';
+import type { Ok, Err } from 'src/chassys/chassys-api/Result.js';
 
 export const authenticationByEmailWorkflow: (
   email: string,

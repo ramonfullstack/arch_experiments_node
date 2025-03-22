@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 
-import type { Err } from '../../../chassys-api/Result.js';
+import type { Err } from '../../../../chassys/chassys-api/Result.js';
 import type { Users } from '../../domain/model/Users.js';
 
 import { authenticationByEmailUseCase, UserLoginSuccessEvent } from './authentication-by-email.js';

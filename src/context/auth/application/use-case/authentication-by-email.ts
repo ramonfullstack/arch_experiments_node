@@ -1,6 +1,6 @@
 import type { Users } from '../../domain/model/Users.js';
 
-import type { Ok, Err } from 'src/chassys-api/Result.js';
+import type { Ok, Err } from 'src/chassys/chassys-api/Result.js';
 
 export class UserLoginSuccessEvent implements Ok<{ token: string }> {
   value: { token: string };

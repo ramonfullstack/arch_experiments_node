@@ -2,8 +2,8 @@ import type { Request, Response } from 'express';
 
 import { loginRequestDto } from '../serializers/loginRequestDto.js';
 
-import { authenticationByEmailWorkflow } from 'src/auth/application/authenticationByEmailWorkflow.js';
-import { isError } from 'src/chassys-api/Result.js';
+import { isError } from 'src/chassys/chassys-api/Result.js';
+import { authenticationByEmailWorkflow } from 'src/context/auth/application/authenticationByEmailWorkflow.js';
 
 export const loginController = async (req: Request, res: Response): Promise<void> => {
   const loginRequestParsed = loginRequestDto(req);
