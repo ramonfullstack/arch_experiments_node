@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import type { Users } from '../../domain/model/Users.js';
+import type { Users } from '../../../../auth/domain/entity/Users.js';
 
 import { wrapRepository } from 'src/chassys/chassys-domain/wrapRepository.js';
 

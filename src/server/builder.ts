@@ -1,7 +1,7 @@
 import cors, { CorsOptions } from 'cors';
 import express, { Application } from 'express';
 
-import { authRoute } from 'src/app/auth-api/staff/index.js';
+import { authRoute } from 'src/todo/auth/infrastructure/api/staff/router.js';
 
 const routes = (app: Application): void => {
   app.use('/auth', authRoute());

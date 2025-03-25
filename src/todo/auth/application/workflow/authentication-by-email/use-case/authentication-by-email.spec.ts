@@ -1,10 +1,12 @@
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 
-import type { Err } from '../../../../chassys/chassys-api/Result.js';
-import type { Users } from '../../domain/model/Users.js';
+import type { Users } from '../domain/model/Users.js';
 
-import { authenticationByEmailUseCase, UserLoginSuccessEvent } from './authentication-by-email.js';
+import { authenticationByEmailUseCase } from './authentication-by-email.js';
+import { UserLoginSuccessEvent } from '../../../../domain/event/UserLoginSuccessEvent.js';
+
+import type { Err } from 'src/chassys/chassys-api/Result.js';
 
 describe('authenticationByEmailUseCase', () => {
   const fakeUser: Users = {
